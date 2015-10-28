@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="shortcut icon" href="../../assets/ico/favicon.ico"> -->
+
+    <title>Personas desaparecidas - N2</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/flat-ui.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link href='http://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
+    
+    <!-- Custom styles for this template -->
+    <link href="css/santafe.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <link rel="stylesheet" type="text/css" href="css/ie8.css" />
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body role="document" class="n2">
+
+  <!--  Header -->
+ <?php
+ include 'header.php';
+
+ ?>
+ <div class="box-6 ui-bg-9">
+    <div class="container">
+      <h2 class="ui-h2-3"><a href="#">Personas desaparecidas de su hogar</a></h2>
+    </div>
+ </div>
+ <div class="container" role="main">
+ <!-- Hot Links   -->
+ 
+ <div class="box-0 cta-headers  internal-cta">
+   <div class="row">
+   <div class="pull-right santafe-avanza">
+     <a href="#"><img src="imgs/santafe-avanza.png" alt="Santa Fe Avanza"></a>
+   </div>
+   
+    </div>
+ </div>
+
+  
+ <!-- Contact Grid  -->
+ <div class="contents contents-personas">
+
+   <div class="main box-personas">
+
+      <div class="tabs">
+
+        <ul class="tabs-nav">
+          <li class="active"><a href="personas.php" data-target="tab-1">Menores</a></li>
+          <li><a href="personas.php" data-target="tab-2">Mayores</a></li>      
+        </ul>
+
+        <div class="tab-contents ui-bg-1">
+
+          <div class="tab-content tab-1 active">
+
+            <div class="perfil-desaparecido">
+              <div class="pull-left"><img src="imgs/persona-desaparecida-n2.jpg" alt="" /></div>
+              <div class="pull-left">
+                <h3>Leandro Nicolas I&ntilde;&iacute;guez</h3>
+                <p><strong>Tipo de Caso: </strong>Desaparici&oacute;n</p>
+                <p><strong>Fecha de Desaparici&oacute;n: </strong>25 de mayo de 2013</p>
+                <p><strong>Sexo: </strong>Masculino</p>
+                <p><strong>Altura: </strong>1.75</p>
+                <p><strong>Contextura: </strong>Delgada</p>
+                <p><strong>Tez: </strong>Blanca</p>
+                <p><strong>Color de ojos: </strong>Negros</p>
+                <p><strong>Edad: </strong>15 A&ntilde;os</p>
+                <p><strong>Color de Cabellos: </strong>Negros</p>
+                <p><strong>Localidad: </strong>San Genaro oeste</p>
+                <p><strong>Provincia: </strong>Santa Fe</p>
+              </div>
+            </div>
+            <!--perfil-desaparecido-->
+            <div class="social" style="overflow:hidden">
+              <div style="margin: 0; float:left">
+                <a href="http://twitter.com/share" class="twitter-share-button" data-text="{{ noticia.getTitulo }}" data-count="horizontal" data-via="santafe.gob.ar" style="font-size:10px;" data-lang="es">Twittear</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+              </div>
+              <div style="margin:0 10px 0 0px; float:left;">
+                <div class="fb-like" data-href="https://www.santafe.gov.ar/noticias/noticia/{{noticia.id}}" data-send="true" data-layout="button_count"  data-width="105" data-show-faces="false"></div>
+              </div> 
+              <div style="margin:0 10px 0 5px; float:left;"><g:plusone size="medium"></g:plusone></div>
+              <div class="imprimir">
+                <a href="#"  onclick="javascript:window.print();"> <i class="icon-impresora"></i></a>
+              </div>
+              <div class="enviar">
+                <a href="#"><i class="icon-compartir"></i></a>
+              </div>
+            </div>
+            <!--social-->
+
+          </div>
+          <!--menores-->
+
+          <div class="tab-content tab-2">
+
+           
+          </div>
+          <!--mayores-->
+
+        </div>
+
+      </div>
+
+   </div>
+
+  <div class="sidebar">
+    <img class="pull-left" src="imgs/desaparecidos-2.jpg" alt=""/>
+    <div class="touch-hidden">
+      <a href="#"><img class="flex-img" src="imgs/santafe-responde.png" alt="Santa Fe Responde"></a>
+    </div>
+  </div>
+
+ </div>
+ 
+ </div>
+  <?php
+  include 'footer_n2.php';
+  ?>
+  
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>
+        if (!window.jQuery) {
+            document.write('<script src="js/jquery.min.js"><\/script>')
+        }
+        </script> 
+
+        <script>
+
+  $(".tabs-nav a").on('click',function(ev){
+    ev.preventDefault();
+    el = $(this);
+    $(".tabs-nav li").removeClass('active');
+    el.parent().addClass('active');
+    $('.tab-content').removeClass('active');
+    $('.'+el.data('target')).addClass('active');
+  })
+        if (!window.jQuery) {
+            document.write('<script src="js/jquery.min.js"><\/script>')
+        }
+        </script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+    $(document).ready(function() {
+
+    $('.search-link').on('click', function(ev){
+      ev.preventDefault();
+      $(this).hide();
+      $('.search-form').show();
+      $('#q').focus()
+    });
+    $('#q').on('blur', function(){
+      $('.search-link').show();
+      $('.search-form').hide();
+    })
+  
+  
+  $('.news-slider-2').owlCarousel({
+    navigation : false,
+    items:2,
+    itemsDesktop : [1200,2], //5 items between 1000px and 901px
+    itemsDesktopSmall : [1039,2], // betweem 900px and 601px
+    itemsTablet: [768,1],
+    itemsMobile: [510,1],
+  });
+
+  $('.news-slider:not(.news-slider-2)').owlCarousel({
+    navigation : false,
+    items:3,
+    itemsDesktop : [1200,3], //5 items between 1000px and 901px
+    itemsDesktopSmall : [1039,2], // betweem 900px and 601px
+    itemsTablet: [768,2],
+    itemsMobile: [510,1],
+  });
+
+ 
+});</script>
+    <!--script src="../../assets/js/docs.min.js"></script-->
+  </body>
+</html>
